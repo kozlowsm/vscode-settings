@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "git.autofetch": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "editor.minimap.enabled": false
+}

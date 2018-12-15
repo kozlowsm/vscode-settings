@@ -11,10 +11,10 @@ const obj = {
   location: 'seekonk'
 };
 
-let name = 'mike';
-let butt = 'yes';
+const name = 'mike';
+const butt = 'yes';
 
 function hello() {
-  let name = 'mike';
+  const name = 'mike';
   return name;
 }
