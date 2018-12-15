@@ -1,5 +1,5 @@
+/* eslint-disable no-console */
 const logToConsole = msg => {
-  // eslint-disable-next-line no-console
   console.log(msg);
 };
 
@@ -15,6 +15,10 @@ const name = 'mike';
 const butt = 'yes';
 
 function hello() {
-  const name = 'mike';
-  return name;
+  const firstName = 'mike';
+  return firstName;
 }
+
+console.log(name, butt);
+console.log(hello());
+console.log(obj);
