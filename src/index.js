@@ -8,7 +8,7 @@ logToConsole(message);
 
 const obj = {
   name: 'mike',
-  location: 'seekonk'
+  location: 'seekonk',
 };
 
 const name = 'mike';
