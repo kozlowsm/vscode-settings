@@ -4,14 +4,14 @@ echo -e "Initializing package.json"
 npm init -y
 
 echo "Installing dependencies..."
-npm i eslint -D --quiet
-npm i eslint-config-airbnb -D --quiet
-npm i eslint-config-prettier -D --quiet
-npm i eslint-plugin-import -D --quiet
-npm i eslint-plugin-jsx-a11y -D --quiet
-npm i eslint-plugin-prettier -D --quiet
-npm i eslint-plugin-react -D --quiet
-npm i prettier -D --quiet
+npm i eslint -D 
+npm i eslint-config-airbnb -D 
+npm i eslint-config-prettier -D 
+npm i eslint-plugin-import -D 
+npm i eslint-plugin-jsx-a11y -D 
+npm i eslint-plugin-prettier -D 
+npm i eslint-plugin-react -D 
+npm i prettier -D 
 
 echo -e "Create .eslintrc config file..."
 
@@ -35,15 +35,6 @@ echo "{
         }
     }" > .eslintrc
 
-echo -e "appending scripts to package.json..."
-
-sed "/&& exit 1\"/a\ ,
-    \"format\": \"prettier --write '**/*.{js,jsx,json}'\",
-    \"lint\": \"eslint '**/*.{js,jsx,json}' --quiet\"" package.json
-
-# echo -e "prettifying code..."
-# prettier --write "**/*.{js,jsx,json}"
-# echo -e "linting code..."
-# eslint "**/*.{js,jsx,json}" --quiet
+echo "Ensure ESLint and Prettier extensions are installed on VSCode."
 
 echo "Installation Complete!"
